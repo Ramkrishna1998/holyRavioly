@@ -1,0 +1,87 @@
+.HolyRaviolySliderVideoOverlay{
+    background-color: #edece7;
+    position: absolute; /* Sit on top of the page content */
+    display: block; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    opacity: 0.0;
+}
+
+
+.overlay{
+    /* background-color: red; */
+    position: absolute; /* Sit on top of the page content */
+    display: inline-block; /* Hidden by default */
+    width: 96%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 10px;
+    left: 0;
+    color: red;
+    text-align: left;
+    vertical-align: middle;
+    padding-top:25%;
+    z-index: 4; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+.mySwiper{
+    height: 50%;
+    width: 50%;
+
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+span{
+    padding-left: 6%;
+    font-family: 'MainsonNeyeExtended-Medium';
+    font-size: 0.9em;
+}
+
+.spanRight{
+    position: absolute;
+    right: 6%;
+    /* background-color: red; */
+}
+
+span a {
+    text-decoration: none;
+    color: #ffffff;
+}
+  
+span a:hover,
+span a:active,
+span a.active {
+    color: #ffffff;
+}

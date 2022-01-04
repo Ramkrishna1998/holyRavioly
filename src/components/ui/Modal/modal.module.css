@@ -1,0 +1,76 @@
+.modalBackground {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+ 
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  padding: 0px;
+}
+
+.modalContainer {
+  width: 100%;
+  height: 100%;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  display: flex;
+  background-color: rgb(199, 191, 191);
+
+  position: relative;
+  padding-top: 56.25%;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+ /*  flex-direction: column; */
+}
+
+.calcleButtonClass{
+  z-index: 101;
+  position: absolute; 
+  justify-content: left;
+  text-align: left;
+  vertical-align: text-top;
+
+  background-color: transparent;
+  border: solid gray 2px;
+  font-size: 18px;
+  color: gray;
+  font-weight: lighter;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.titleCloseBtn {
+  /* display: flex;
+  justify-content: flex-start;   */
+  position: absolute; /* Sit on top of the page content */
+  display: inline-block; /* Hidden by default */  
+  top: 4%;
+  left: 3%;
+  text-align: left;
+  vertical-align: middle;
+  z-index: 101;
+  border: solid white 2px;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#cancelBtn {
+  background-color: crimson;
+}
+
+.reactPlayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

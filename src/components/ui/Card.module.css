@@ -1,0 +1,9 @@
+.card {
+    width: 200px;
+    /* height: 200px; */
+    position: relative;
+    display: inline-block;
+    align-items: left;
+    padding: 10px;
+    /* background-color: darkolivegreen; */
+}

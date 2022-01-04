@@ -1,0 +1,45 @@
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+.main {
+    width: 100%;
+}
+
+.contactcontent {
+    width: 70%;
+    left: 15%;
+    position: relative;
+    display: inline-block;
+    top: 300px;
+    text-align: left;
+    line-height: 2;
+    font-family: 'MainsonNeyeExtended-Bold';
+    animation: fadeIn 4s ease-in;
+}
+
+.contactcontent .italic{
+    font-family: 'MainsonNeyeExtended-BoldItalic';
+}
+
+.contactcontent a {
+    text-decoration: underline;
+    color: #000000;
+}
+  
+.contactcontent a:hover,
+.contactcontent a:active,
+.contactcontent a.active {
+    color: #000000;
+}
+
+.producerslist {
+    margin: auto;
+    width: 35%;
+    position: relative;
+    top: 400px;
+    text-align: left;
+    line-height: 2;
+    animation: fadeIn 4s ease-in;
+}

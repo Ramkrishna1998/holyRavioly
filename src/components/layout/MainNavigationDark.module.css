@@ -1,0 +1,39 @@
+.headerDark {
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'MainsonNeyeExtended-Bold';
+}
+  
+.headerDark ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+}
+  
+.headerDark li {
+    margin-left: 3rem;
+}
+  
+.headerDark a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+  
+.headerDark a:hover,
+.headerDark a:active,
+.headerDark a.active {
+    color: #ffffff;
+}
+
+.copyDark {
+    font-size: 0.8rem;
+    margin-right: 3rem;
+    font-family: 'MainsonNeyeExtended-Medium';
+    color: #ffffff;
+}
