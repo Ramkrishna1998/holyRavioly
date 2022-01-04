@@ -13,7 +13,6 @@
 .modalContainer {
   width: 100%;
   height: 100%;
-  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
   display: flex;
   background-color: rgb(199, 191, 191);
 
@@ -22,7 +21,6 @@
   justify-content: center;
   align-items: center;
   z-index: 10;
- /*  flex-direction: column; */
 }
 
 .calcleButtonClass{
@@ -42,18 +40,15 @@
 }
 
 .titleCloseBtn {
-  /* display: flex;
-  justify-content: flex-start;   */
-  position: absolute; /* Sit on top of the page content */
-  display: inline-block; /* Hidden by default */  
+  position: absolute;
+  display: inline-block;
   top: 4%;
   left: 3%;
   text-align: left;
   vertical-align: middle;
   z-index: 101;
-  border: solid white 2px;
+  border: solid white 1px;
   border-radius: 50%;
-  padding: 2px;
 }
 
 .titleCloseBtn button {
@@ -73,4 +68,39 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.spanRight{
+  position: absolute;
+  right: 2%;
+  vertical-align: text-bottom;
+  text-align: right;
+}
+
+.overlay{
+  position: absolute;
+  display: inline-block;
+  color: white;
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  right: 0px; 
+  bottom: 3%;
+  font-size: 11px;
+  margin-right: 4%;
+  z-index: 4;
+}
+.hrvideoTitleClass{
+  width: 25%;
+  text-align: left;
+  padding-left: 0px;
+}
+.hrVideoDirectorClass{
+  width: 50%;
+  text-align: left;
+
+}
+.hrVideoCopyClass{
+  width: 25%;
+  text-align: right;
 }

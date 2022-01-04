@@ -32,8 +32,8 @@ function HolyRaviolySliderVideo(props) {
     }
 
     function handleClickFullscreen() {
-        console.log('ref',ref.current.props.url, 'props', props)
-        props.setUrl(ref.current.props.url)
+        console.log('ref', ref.current.props, 'props', props)
+        props.setVideoData(ref.current.props.url, props.hrVideoTitle, props.hrVideoDirector, props.hrVideoCopy)
         //screenfull.request(findDOMNode(ref.current));
     }
 

@@ -15,6 +15,7 @@ function HomePage() {
     const [offset, setOffset] = useState(0);
     const [showModal, setShowModal] = useState(false)
     const [videoUrl, setVideoUrl] = useState('')
+    const [overLayerVideoData, setOverLayerVideoData] = useState({})
     const slideRef = useRef(null);
 
     function showOverlays() {
@@ -44,15 +45,16 @@ function HomePage() {
         setShowModal(value);
     }
 
-    function handleVideoUrl(value) {
+    function handleVideoData(value, hrVideoTitle, hrVideoDirector, hrVideoCopy) {
         setVideoUrl(value)
         handleModel(true);
+        setOverLayerVideoData({ 'hrVideoTitle': hrVideoTitle, 'hrVideoDirector': hrVideoDirector, 'hrVideoCopy': hrVideoCopy })
     }
     console.log('video URL', videoUrl)
     return (
         <div>
             
-            {showModal ? <Modal url={videoUrl} setOpenModal={handleModel} /> :
+            {showModal ? <Modal overLayerData={overLayerVideoData} url={videoUrl} setOpenModal={handleModel} /> :
             <>
             <MainNavigation />
             <div className={backgrounds.home}></div>
@@ -76,11 +78,11 @@ function HomePage() {
                 >
                     <Slider id="slider" onWheel={(e) => changeSlideOnScroll(e)} className={classes.videoDiv}>
                         <HolyRaviolySliderVideo sliderIndex={0} />
-                        <HolyRaviolySliderVideo sliderIndex={1} setUrl={handleVideoUrl} showAllOverlays={showOverlays} hideAllOverlays={hideOverlays} hrVideoUrl={'https://vimeo.com/649570454'} hrVideoTitle={'Title 1'} hrVideoDirector={'MARC LOUIS SUTTON'} hrVideoCopy={'HOLY RAVIOLI 2021 ©'} directorLink={'/directors'} />
-                        <HolyRaviolySliderVideo sliderIndex={2} setUrl={handleVideoUrl} showAllOverlays={showOverlays} hideAllOverlays={hideOverlays} hrVideoUrl={'https://vimeo.com/649498884'} hrVideoTitle={'GO FURTHER for FORD'} hrVideoDirector={'KRISTIAN BOYSEN'} hrVideoCopy={'HOLY RAVIOLI 2021 ©'} directorLink={'/directors'} />
-                        <HolyRaviolySliderVideo sliderIndex={3} setUrl={handleVideoUrl} showAllOverlays={showOverlays} hideAllOverlays={hideOverlays} hrVideoUrl={'https://vimeo.com/650560792'} hrVideoTitle={'Title 3'} hrVideoDirector={'KASPER KIERTZNER'} hrVideoCopy={'HOLY RAVIOLI 2021 ©'} directorLink={'/directors'} />
-                        <HolyRaviolySliderVideo sliderIndex={4} setUrl={handleVideoUrl} showAllOverlays={showOverlays} hideAllOverlays={hideOverlays} hrVideoUrl={'https://vimeo.com/649570393'} hrVideoTitle={'Title 4'} hrVideoDirector={'JUDITH VEENEDAAL'} hrVideoCopy={'HOLY RAVIOLI 2021 ©'} directorLink={'/directors'} />
-                        <HolyRaviolySliderVideo sliderIndex={5} setUrl={handleVideoUrl} showAllOverlays={showOverlays} hideAllOverlays={hideOverlays} hrVideoUrl={'https://vimeo.com/649569641'} hrVideoTitle={'Title 5'} hrVideoDirector={'METTE CARLA ALBRECHTSEN'} hrVideoCopy={'HOLY RAVIOLI 2021 ©'} directorLink={'/directors'} />
+                                <HolyRaviolySliderVideo sliderIndex={1} setVideoData={handleVideoData} showAllOverlays={showOverlays} hideAllOverlays={hideOverlays} hrVideoUrl={'https://vimeo.com/649570454'} hrVideoTitle={'Title 1'} hrVideoDirector={'MARC LOUIS SUTTON'} hrVideoCopy={'HOLY RAVIOLI 2021 ©'} directorLink={'/directors'} />
+                                <HolyRaviolySliderVideo sliderIndex={2} setVideoData={handleVideoData} showAllOverlays={showOverlays} hideAllOverlays={hideOverlays} hrVideoUrl={'https://vimeo.com/649498884'} hrVideoTitle={'GO FURTHER for FORD'} hrVideoDirector={'KRISTIAN BOYSEN'} hrVideoCopy={'HOLY RAVIOLI 2021 ©'} directorLink={'/directors'} />
+                                <HolyRaviolySliderVideo sliderIndex={3} setVideoData={handleVideoData} showAllOverlays={showOverlays} hideAllOverlays={hideOverlays} hrVideoUrl={'https://vimeo.com/650560792'} hrVideoTitle={'Title 3'} hrVideoDirector={'KASPER KIERTZNER'} hrVideoCopy={'HOLY RAVIOLI 2021 ©'} directorLink={'/directors'} />
+                                <HolyRaviolySliderVideo sliderIndex={4} setVideoData={handleVideoData} showAllOverlays={showOverlays} hideAllOverlays={hideOverlays} hrVideoUrl={'https://vimeo.com/649570393'} hrVideoTitle={'Title 4'} hrVideoDirector={'JUDITH VEENEDAAL'} hrVideoCopy={'HOLY RAVIOLI 2021 ©'} directorLink={'/directors'} />
+                                <HolyRaviolySliderVideo sliderIndex={5} setVideoData={handleVideoData} showAllOverlays={showOverlays} hideAllOverlays={hideOverlays} hrVideoUrl={'https://vimeo.com/649569641'} hrVideoTitle={'Title 5'} hrVideoDirector={'METTE CARLA ALBRECHTSEN'} hrVideoCopy={'HOLY RAVIOLI 2021 ©'} directorLink={'/directors'} />
                         <HolyRaviolySliderVideo sliderIndex={6} />
                     </Slider>
 
