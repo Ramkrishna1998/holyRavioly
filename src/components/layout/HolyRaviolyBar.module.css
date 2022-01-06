@@ -8,6 +8,21 @@
     100% {top: 3rem;}
 }
 
+.storiesComponentClass{
+    font-family: 'MainsonNeyeExtended-Bold';
+    text-align: center;
+    width: 100%;
+    font-size: 15rem;
+    color: rgb(110, 110, 110);
+    position: absolute;
+    top: 45%;
+    z-index: 1;
+    pointer-events: none;
+   /*  animation-name: movehrdown;
+    animation-duration: 1s;
+    animation-timing-function: ease; */
+}
+
 .footerbar {
     font-family: 'MainsonNeyeExtended-Bold';
     text-align: center;
