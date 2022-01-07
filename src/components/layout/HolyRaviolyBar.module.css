@@ -79,6 +79,10 @@
     position: absolute;
     left: -20%;
     right: -20%;
-    margin: auto;
+    margin: 150px;
     text-align: center;
+}
+
+.pageBg{
+    background-color: rgb(218, 199, 149) !important;
 }

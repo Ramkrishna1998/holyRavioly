@@ -5,7 +5,7 @@ import MainNavigation from '../components/layout/MainNavigation';
 import StoriesComponent from '../components/layout/StoriesComponent/StoriesComponent'
 function StoriesPage() {
     return (
-        <div>
+        <div className={classes.pageBg}>
             <MainNavigation />
             <div className={backgrounds.stories}></div>
             <div className={classes.storiesComponentClass}>
