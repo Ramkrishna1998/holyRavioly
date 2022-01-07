@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'MainsonNeyeExtended-Book';
+  src: url('./fonts/MaisonNeueExtended-Book.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'MainsonNeyeExtended-BookItalic';
+  src: url('./fonts/MaisonNeueExtended-BookItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'MainsonNeyeExtended-Medium';
+  src: url('./fonts/MaisonNeueExtended-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'MainsonNeyeExtended-Bold';
+  src: url('./fonts/MaisonNeueExtended-Bold.woff') format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'MainsonNeyeExtended-BoldItalic';
+  src: url('./fonts/MaisonNeueExtended-BoldItalic.woff') format('woff');
+  font-weight: bold;
+}
+
+body {
+  font-family: 'MainsonNeyeExtended-Medium';
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden; /* Hide scrollbars */
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

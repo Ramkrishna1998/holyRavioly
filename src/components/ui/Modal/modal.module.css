@@ -1,0 +1,94 @@
+.modalContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgb(199, 191, 191);
+
+  position: relative;
+  padding-top: 56.25%;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.calcleButtonClass{
+  z-index: 101;
+  position: absolute; 
+  justify-content: left;
+  text-align: left;
+  vertical-align: text-top;
+
+  background-color: transparent;
+  border: solid gray 2px;
+  font-size: 18px;
+  color: gray;
+  font-weight: lighter;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.titleCloseBtn {
+  position: absolute;
+  display: inline-block;
+  top: 4%;
+  left: 3%;
+  text-align: left;
+  vertical-align: middle;
+  z-index: 101;
+  border: solid white 1px;
+  border-radius: 50%;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#cancelBtn {
+  background-color: crimson;
+}
+
+.reactPlayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.spanRight{
+  position: absolute;
+  right: 2%;
+  vertical-align: text-bottom;
+  text-align: right;
+}
+
+.overlay{
+  position: absolute;
+  display: inline-block;
+  color: white;
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  right: 0px; 
+  bottom: 3%;
+  font-size: 11px;
+  margin-right: 4%;
+  z-index: 4;
+}
+.hrvideoTitleClass{
+  width: 25%;
+  text-align: left;
+  padding-left: 0px;
+}
+.hrVideoDirectorClass{
+  width: 50%;
+  text-align: left;
+
+}
+.hrVideoCopyClass{
+  width: 25%;
+  text-align: right;
+}

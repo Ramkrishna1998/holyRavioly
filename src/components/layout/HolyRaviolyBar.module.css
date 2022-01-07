@@ -1,0 +1,84 @@
+@keyframes movehrdown {
+    0% {bottom:60%;}
+    100% {bottom:0rem;}
+}
+
+@keyframes movehrup {
+    0% {top:60%;}
+    100% {top: 3rem;}
+}
+
+.storiesComponentClass{
+    font-family: 'MainsonNeyeExtended-Bold';
+    text-align: center;
+    width: 100%;
+    font-size: 15rem;
+    color: rgb(110, 110, 110);
+    position: absolute;
+    top: 45%;
+    z-index: 1;
+    pointer-events: none;
+   /*  animation-name: movehrdown;
+    animation-duration: 1s;
+    animation-timing-function: ease; */
+}
+
+.footerbar {
+    font-family: 'MainsonNeyeExtended-Bold';
+    text-align: center;
+    width: 100%;
+    font-size: 15rem;
+    color: rgb(110, 110, 110);
+    position: fixed;
+    bottom: 0rem;
+    animation-name: movehrdown;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+.footerbar a {
+    text-decoration: none;
+    color: rgb(110, 110, 110);
+}
+  
+.footerbar a:hover,
+.footerbar a:active,
+.footerbar a.active {
+    color: rgb(110, 110, 110);
+}
+
+.footerbarDirectors {
+    font-family: 'MainsonNeyeExtended-Bold';
+    text-align: center;
+    width: 100%;
+    font-size: 15rem;
+    color: rgb(110, 110, 110);
+    position: absolute;
+    top: 3rem;
+    animation-name: movehrup;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    /* z-index: -1; */
+}
+
+.footerbarDirectors a {
+    text-decoration: none;
+    color: rgb(110, 110, 110);
+}
+  
+.footerbarDirectors a:hover,
+.footerbarDirectors a:active,
+.footerbarDirectors a.active {
+    color: rgb(110, 110, 110);
+}
+
+.videoFrame{
+    width: 140%;
+    height: 48%;
+    /* background-color: brown; */
+    position: absolute;
+    left: -20%;
+    right: -20%;
+    margin: auto;
+    text-align: center;
+}
