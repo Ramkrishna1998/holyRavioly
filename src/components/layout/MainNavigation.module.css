@@ -2,6 +2,7 @@
     width: 100%;
     height: 7rem;
     display: flex;
+    flex: 0.6;
     align-items: center;
     justify-content: space-between;
     font-family: 'MainsonNeyeExtended-Bold';
@@ -34,21 +35,23 @@
 
 .topbar {
     display: flex;
+    position: fixed;
+    flex-direction: row;
+    width: 100%;
 }
-
+ 
 .fullservice {
     display: flex;
     align-items: center;
     font-size: 0.8rem;
+    flex: 0.25;
     font-family: 'MainsonNeyeExtended-Medium';
-    right: 0;
-    width: 40%;
 }
 
 .copy {
     display: flex;
     align-items: center;
+    flex: 0.15;
     font-size: 0.8rem;
     font-family: 'MainsonNeyeExtended-Medium';
-    width: 20%;
 }

@@ -29,7 +29,7 @@
     width: 100%;
     font-size: 15rem;
     color: rgb(110, 110, 110);
-    position: absolute;
+    position: fixed;
     bottom: 0rem;
     animation-name: movehrdown;
     animation-duration: 1s;
@@ -79,6 +79,10 @@
     position: absolute;
     left: -20%;
     right: -20%;
-    margin: auto;
+    margin: 150px;
     text-align: center;
+}
+
+.pageBg{
+    background-color: rgb(218, 199, 149) !important;
 }
