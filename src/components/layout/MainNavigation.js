@@ -10,7 +10,7 @@ function MainNavigation() {
         /* Switch here for Dark and Light navigation classes i.e. classes.header or classesDark.headerDark */
         <div className={classes.topbar}>
             <header className={classes.header}>
-                <nav className='bg-red-100 text-red-500'>
+                <nav>
                     <ul>
                         <li>
                             <Link to='/directors'>DIRECTORS</Link>
