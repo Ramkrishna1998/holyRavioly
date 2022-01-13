@@ -24,14 +24,14 @@ function StoriesComponent() {
             </div> : <div />
             }
             <div className={classes.wrapperClass}>
-                <div className={classes.one}><img src="/Image 1.png" alt="Girl in a jacket" width="100%" height="100%" /></div>
-                <div className={classes.two}>{/* <img src="https://www.denofgeek.com/wp-content/uploads/2019/02/iron-man-iron-monger.jpg" alt="Girl in a jacket" width="50%" height="50%" /> */}</div>
-                <div className={classes.three} >{/* <img src="/Image 2.png" alt="Girl in a jacket" width="50%" height="50%" / >*/}</div>
-                <div className={classes.four}><img src="/Image 2.png" alt="Girl in a jacket" width="100%" height="100%" /></div>
-                <div className={classes.one}><img src="/Image 1.png" alt="Girl in a jacket" width="100%" height="100%" /></div>
-                <div className={classes.two}>{/* <img src="https://www.denofgeek.com/wp-content/uploads/2019/02/iron-man-iron-monger.jpg" alt="Girl in a jacket" width="50%" height="50%" /> */}</div>
-                <div className={classes.three} >{/* <img src="/Image 2.png" alt="Girl in a jacket" width="50%" height="50%" / >*/}</div>
-                <div className={classes.four}><img src="/Image 2.png" alt="Girl in a jacket" width="100%" height="100%" /></div>
+                <div className={classes.one}><img src="assets/image1.png" alt="Girl in a jacket" width="100%" height="100%" /></div>
+                <div className={classes.two}></div>
+                <div className={classes.three}></div>
+                <div className={classes.four}><img src="assets/image2.png" alt="Girl in a jacket" width="100%" height="100%" /></div>
+                <div className={classes.one}><img src="assets/image3.png" alt="Girl in a jacket" width="100%" height="100%" /></div>
+                <div className={classes.two}></div>
+                <div className={classes.three}></div>
+                <div className={classes.four}><img src="assets/image1.png" alt="Girl in a jacket" width="100%" height="100%" /></div>
             </div>
         </div>
     )
