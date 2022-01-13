@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: 'MainsonNeyeExtended-Book';
   src: url('./fonts/MaisonNeueExtended-Book.woff') format('woff');

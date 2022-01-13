@@ -1,6 +1,7 @@
 import { Route, Switch } from "react-router";
 
 import './App.css';
+import './index.css';
 import HomePage from "./pages/Home";
 import DirectorsPage from "./pages/Directors";
 import StoriesPage from "./pages/Stories";
