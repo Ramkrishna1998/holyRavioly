@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router";
 import './App.css';
 import './index.css';
 import HomePage from "./pages/Home";
+import NewHomePage from "./pages/newHomePage";
 import DirectorsPage from "./pages/Directors";
 import StoriesPage from "./pages/Stories";
 import ContactsPage from "./pages/Contacts";
@@ -13,7 +14,7 @@ function App() {
       <Layout>
         <Switch>
           <Route path='/' exact>
-            <HomePage/>
+          <NewHomePage />
           </Route>
           <Route path='/directors'>
             <DirectorsPage/>

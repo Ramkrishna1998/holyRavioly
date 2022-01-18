@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
   display: flex;
-  background-color: rgb(199, 191, 191);
+  background-color: inherit;
 
   position: relative;
   padding-top: 56.25%;

@@ -35,6 +35,7 @@
     animation-name: movehrdown;
     animation-duration: 1s;
     animation-timing-function: ease;
+    background-color: inherit;
 }
 
 .footerbar a {
@@ -86,4 +87,9 @@
 
 .pageBg{
     background-color: rgb(218, 199, 149) !important;
+}
+
+.marginTop{
+    padding-top: 33%;
+    padding-bottom: 20%;
 }
